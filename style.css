@@ -1,0 +1,32 @@
+body{
+    background-color: #66ff66;
+}
+
+div.keltainen-div{ 
+	background-color: #ff4dff;
+	margin-left: 225px;
+	color: red;
+}
+
+div.tyylikas-div {
+    height: 100px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, yellow, #ddd00 50%, orange);
+}
+
+ .padding-tyyli{
+    margin-top: 100px;
+}
+
+img.kuva-tyyli{
+		width:100px;
+		height:100px;
+}
+
+#mallikappale {
+		background-color: green;
+}
+
+#toinen-div {
+		background-color: red;
+}
