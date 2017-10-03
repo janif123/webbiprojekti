@@ -1,3 +1,5 @@
+
+<!DOCTYPE html>
 <html>
 	<head>	
 		<title>Minun oma sivu</title>
@@ -9,6 +11,13 @@
                     <button type="button" onclick="toggleClass('testiElementti', 'keltainen-div')">Paina tästä!</button>
 <div>
             <img src="index.jpeg">
+</div>
+          <div>
+            <img id="kuva1" width="150" src="images.png" > 
+</div> 
+<div>
+            <button onclick="switchImage('kuva1','images.png')">kuva 1</button>
+            <button onclick="switchImage('kuva1', 'index.jpeg')">kuva 2</button>
 </div>
                     <p id="teksti-kappale"></p>
                 </div>	
@@ -24,4 +33,3 @@
 		</div>
 	</body>
 </html>
-
