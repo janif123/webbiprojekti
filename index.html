@@ -1,35 +1,89 @@
-
 <!DOCTYPE html>
 <html>
 	<head>	
-		<title>Minun oma sivu</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-        <script src="Script.js"> </script>
+	
+	<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Hoidot</a>
+  <a href="#news">Hinnasto</a>
+  <a href="#contact">Yhteydenotto</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	
+	
+	
+	
+	
+	
+	<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="index.jpeg" style="width:20%">
+    <div class="text">kuva 1</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="images.png" style="width:20%">
+    <div class="text">Kuva 2</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>  
+</div>
 	</head>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <script src="Script.js"></script>
     <body>    
-                <div>
-                    <button type="button" onclick="toggleClass('testiElementti', 'keltainen-div')">Paina tästä!</button>
-<div>
-            <img src="index.jpeg">
+          
+	<div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Hoidot')">Hoidot</button>
+  <button class="tablinks" onclick="openTab(event, 'Hinnasto')">Hinnasto</button>
+  <button class="tablinks" onclick="openTab(event, 'Yhteydenotto')">Yhteydenotto</button>
 </div>
-          <div>
-            <img id="kuva1" width="150" src="images.png" > 
-</div> 
-<div>
-            <button onclick="switchImage('kuva1','images.png')">kuva 1</button>
-            <button onclick="switchImage('kuva1', 'index.jpeg')">kuva 2</button>
+
+<div id="Hoidot" class="tabcontent">
+  <h3>Hoidot</h3>
+  <p>Hoito a Hoito b Hoito C</p>
+   <span onclick="this.parentElement.style.display='none'">x</span>
 </div>
-                    <p id="teksti-kappale"></p>
-                </div>	
-		<a target="_blank" href="http://www.yle.fi">
-			<img class="kuva-tyyli margin-tyyli" src="index.png">
-		</a>
-       	         <div id="testiElementti" class="keltainen-div">Hei</div>
-		<p id="mallikappale">Mallikappale</>
-			<h1>testi1</h1>
-		       </div>
-		       <div id="toinen-div" class="padding-tyyli"> toinen div</div>
-		       <div class="tyylikas-div">
-		</div>
+
+<div id="Hinnasto" class="tabcontent">
+  <h3>Hinnasto</h3>
+  <p>Hinta a Hinta b Hinta C</p> 
+   <span onclick="this.parentElement.style.display='none'">x</span>
+</div>
+
+<div id="Yhteydenotto" class="tabcontent">
+  <h3>Yhteydenotto</h3>
+  <p>Tekstiä
+     Tekstiä
+     Tekstiä
+  </p>
+   <span onclick="this.parentElement.style.display='none'">x</span>
+</div>
+<h1>Google Maps</h1>
+
+<div id="map">Kartta tähän</div>
+<div id="map" style="width:400px;height:400px">
+</div>
+
+
+	<footer>
+  <p>Tekstiä</p>
+  <p>Sähköposti: <a href="mailto:">
+  maili>.</p>
+</footer>
+		  
 	</body>
 </html>
+
